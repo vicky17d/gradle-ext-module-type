@@ -1,5 +1,29 @@
- plugins {
+import org.jetbrains.gradle.ext.*
+plugins {
+    id "java"
     id "org.jetbrains.gradle.plugin.idea-ext" version "1.1.2"
 }
 
 
+
+idea {
+
+    project {
+        settings {
+            runConfigurations {
+                "MyApp123"(Application) {
+                    mainClass = 'foo.App'
+                    moduleName = getProject().idea.module.name
+                }
+            }
+        }
+    }
+}
+
+idea {
+    module {
+        settings {
+            rootModuleType = "PYTHON_MODULE"
+        }
+    }
+}
