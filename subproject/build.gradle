@@ -1,0 +1,11 @@
+plugins {
+    id "org.jetbrains.gradle.plugin.idea-ext"
+}
+
+idea {
+    module {
+        settings {
+            rootModuleType = "PYTHON_MODULE"
+        }
+    }
+}
