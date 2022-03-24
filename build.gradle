@@ -20,10 +20,3 @@ idea {
     }
 }
 
-idea {
-    module {
-        settings {
-            rootModuleType = "PYTHON_MODULE"
-        }
-    }
-}

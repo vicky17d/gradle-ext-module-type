@@ -1,3 +1,5 @@
 rootProject.name = 'gradle-ext-module-type'
 
-include "subproject"
+include "pythonModule"
+include "scalaModule"
+include "javaModule"
