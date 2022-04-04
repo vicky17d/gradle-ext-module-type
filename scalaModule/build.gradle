@@ -1,12 +1,11 @@
 
 plugins {
     id "org.jetbrains.gradle.plugin.idea-ext"
+    id "scala"
 }
-
-idea {
-    module {
-        settings {
-            rootModuleType = "SCALA_MODULE"
-        }
-    }
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation 'org.scala-lang:scala3-library_3:3.1.1'
 }
